@@ -1,3 +1,23 @@
+#############################################################################################################
+##                MACD-V Strategy by ZxJaSoN                                                               ##
+##           https://github.com/zxjason/Freqtrade_Strategies                                               ##
+##                                                                                                         ##
+##    Strategy for Freqtrade https://github.com/freqtrade/freqtrade                                        ##
+##                                                                                                         ##
+#############################################################################################################
+##               GENERAL RECOMMENDATIONS                                                                   ##
+##                                                                                                         ##
+##   For optimal performance, suggested to use only BTC and ETH.                                           ##
+#############################################################################################################
+##               HOLD SUPPORT                                                                              ##
+#############################################################################################################
+##               DONATIONS                                                                                 ##
+##                                                                                                         ##
+##                                                                                                         ##
+##               REFERRAL LINKS                                                                            ##
+##                                                                                                         ##
+#############################################################################################################
+
 from freqtrade.strategy import IStrategy, merge_informative_pair
 from freqtrade.strategy import DecimalParameter, IntParameter
 from pandas import DataFrame
