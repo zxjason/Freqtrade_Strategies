@@ -1,21 +1,14 @@
 #############################################################################################################
-##                MACD-V Strategy by ZxJaSoN                                                               ##
-##           https://github.com/zxjason/Freqtrade_Strategies                                               ##
-##                                                                                                         ##
+##    MACD-V Strategy by @zxjason                                                                          ##
+##    https://github.com/zxjason/Freqtrade_Strategies                                                      ##
 ##    Strategy for Freqtrade https://github.com/freqtrade/freqtrade                                        ##
-##                                                                                                         ##
 #############################################################################################################
-##               GENERAL RECOMMENDATIONS                                                                   ##
-##                                                                                                         ##
-##   For optimal performance, suggested to use only BTC and ETH.                                           ##
+##    GENERAL RECOMMENDATIONS                                                                              ##
+##    For optimal performance, suggested to use only BTC and ETH.                                          ##
 #############################################################################################################
-##               HOLD SUPPORT                                                                              ##
-#############################################################################################################
-##               DONATIONS                                                                                 ##
-##                                                                                                         ##
-##                                                                                                         ##
-##               REFERRAL LINKS                                                                            ##
-##                                                                                                         ##
+##    DONATIONS                                                                                            ##
+##    usdc: 0xedB85Ce16ba8268F32925f6fF48190Cea97a9b81                                                     ##
+##    REFERRAL LINKS                                                                                       ##
 #############################################################################################################
 
 from freqtrade.strategy import IStrategy, merge_informative_pair
