@@ -44,7 +44,7 @@ def EWO(dataframe, ema_length=50, ema2_length=200):
     emadif = (ema1 - ema2) / df['close'] * 100
     return emadif
 
-class ElliotV5_SMA_Improved(IStrategy):
+class ElliotV5_SMA_mod1(IStrategy):
     INTERFACE_VERSION = 2
 
     minimal_roi = {
