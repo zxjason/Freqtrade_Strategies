@@ -143,7 +143,7 @@ class ElliotV5_SMA_mod1(IStrategy):
         return dataframe
 
     def custom_stoploss(self, pair: str, trade: 'Trade', current_time: datetime,
-                        current_rate: float, current_profit: float, ​**kwargs) -> float:
+                        current_rate: float, current_profit: float, **kwargs) -> float:
         # Dynamic stoploss using 2*ATR
         dataframe, _ = self.dp.get_analyzed_dataframe(pair, self.timeframe)
         last_candle = dataframe.iloc[-1]
