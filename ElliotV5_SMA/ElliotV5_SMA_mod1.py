@@ -17,6 +17,7 @@ from functools import reduce
 from pandas import DataFrame
 import talib.abstract as ta
 import numpy as np
+from datetime import datetime
 import freqtrade.vendor.qtpylib.indicators as qtpylib
 from freqtrade.persistence import Trade
 from freqtrade.strategy import stoploss_from_open, merge_informative_pair, DecimalParameter, IntParameter
