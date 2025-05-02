@@ -1,0 +1,94 @@
+{
+    "$schema": "https://schema.freqtrade.io/schema.json",
+    "strategy": "NASOSv5HO",
+    "max_open_trades": 3,
+    "stake_currency": "USDT",
+    "stake_amount": 300,
+    "tradable_balance_ratio": 0.9,
+    "dry_run_wallet": 660,
+    "fiat_display_currency": "USD",
+    "timeframe": "5m",
+    "stoploss_on_exchange": true,
+    "dry_run": true,
+    "cancel_open_orders_on_exit": false,
+    "unfilledtimeout": {
+        "unit": "minutes",
+        "entry": 10,
+        "exit": 30
+    },
+    "order_types": {
+        "entry": "limit",
+        "exit": "limit",
+        "emergency_exit": "market",
+        "force_entry": "market",
+        "force_exit": "market",
+        "stoploss": "market",
+        "stoploss_on_exchange": false,
+        "stoploss_on_exchange_interval": 60
+    },
+    "entry_pricing": {
+        "price_side": "same",
+        "ask_last_balance": 0,
+        "use_order_book": true,
+        "order_book_top": 1,
+        "check_depth_of_market": {
+            "enabled": false,
+            "bids_to_ask_delta": 1
+        }
+    },
+    "exit_pricing": {
+        "price_side": "same",
+        "use_order_book": true,
+        "order_book_top": 1
+    },
+    "exchange": {
+        "name": "kucoin",
+        "key": "",
+        "secret": "",
+        "ccxt_config": {
+            "enableRateLimit": true
+        },
+        "ccxt_async_config": {
+            "enableRateLimit": true,
+            "rateLimit": 1500
+        },
+        "pair_whitelist": [
+        ],
+        "pair_blacklist": [
+        ]
+    },
+    "pairlists": [
+        {
+            "method": "RemotePairList",
+            "number_assets": 100,
+            "pairlist_url" : "https://remotepairlist.com?q=6f0b4418a39bc2f2"
+        },
+        {
+            "method": "PriceFilter",
+            "min_price": 0.05,
+            "low_price_ratio": 0.01
+        }
+    ],
+    "telegram": {
+        "enabled": false,
+        "token": "",
+        "chat_id": ""
+    },
+    "api_server": {
+        "enabled": true,
+        "listen_ip_address": "0.0.0.0",
+        "listen_port": 8080,
+        "verbosity": "error",
+        "jwt_secret_key": "",
+        "ws_token": "",
+        "CORS_origins": [],
+        "username": "freqtrader",
+        "password": "freqtrader"
+    },
+    "bot_name": "freqtrade",
+    "initial_state": "running",
+    "force_entry_enable": false,
+    "internals": {
+        "process_throttle_secs": 5
+    }
+}
